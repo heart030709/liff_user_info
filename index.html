@@ -86,7 +86,8 @@
                 const tel = $('input[name="tel"]').val();
                 const fax = $('input[name="fax"]').val();
                 const mail = $('input[name="mail"]').val();
-                const msg = `${company}\n${position}\n${zipcode}\n${address}\n${tel}\n${fax}\n${mail}`;
+                const msghdr = 'userinforegister';
+                const msg = `${msghdr}\n${company}\n${position}\n${zipcode}\n${address}\n${tel}\n${fax}\n${mail}`;
                 sendText(msg);
                 return false;
             });
